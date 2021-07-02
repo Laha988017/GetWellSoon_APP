@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PatientDashboardActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackgroundWhiteGlobal"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/bg_pattern_blue_lightblue"
+                android:orientation="vertical">
+
+                <androidx.gridlayout.widget.GridLayout
+                    android:id="@+id/userInformationIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="10dp"
+                    android:clipToPadding="false">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/userImage"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/user_img"
+                        app:layout_column="0"
+                        app:layout_row="0"
+                        app:layout_gravity="top" />
+
+                    <LinearLayout
+                        android:layout_marginStart="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        app:layout_column="1"
+                        app:layout_row="0">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Welcome"
+                            android:textColor="#EFEBEB"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/nameText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Name"
+                            android:textColor="#EFEBEB" />
+
+                        <TextView
+                            android:id="@+id/userIdText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Email"
+                            android:textColor="#EFEBEB" />
+
+                    </LinearLayout>
+                </androidx.gridlayout.widget.GridLayout>
+            </LinearLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/dashboardNestedScrollview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorBackgroundWhiteGlobal"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+
+                        <androidx.gridlayout.widget.GridLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/hospitalView"
+                                android:layout_width="100dp"
+                                android:layout_height="115dp"
+                                android:layout_margin="3dp"
+                                android:background="@drawable/bg_dashboard_menu_item"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:focusableInTouchMode="false"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                app:layout_column="0"
+                                app:layout_row="0">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="wrap_content"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/ic_baseline_local_hospital_24" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="center"
+                                    android:text="View Hospitals"
+                                    android:textColor="#3350AC"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/qrScannerClickView1"
+                                android:layout_width="100dp"
+                                android:layout_height="115dp"
+                                android:layout_margin="3dp"
+                                android:background="@drawable/bg_dashboard_menu_item"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:focusableInTouchMode="false"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                app:layout_column="1"
+                                app:layout_row="0">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="wrap_content"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/ic_baseline_contact_phone_24" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="center"
+                                    android:text="Contact Number"
+                                    android:textColor="#3350AC"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/qrScannerClickView2"
+                                android:layout_width="100dp"
+                                android:layout_height="115dp"
+                                android:layout_margin="3dp"
+                                android:background="@drawable/bg_dashboard_menu_item"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:focusableInTouchMode="false"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                app:layout_column="2"
+                                app:layout_row="0">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="wrap_content"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/ic_hospital_svgrepo_com" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="center"
+                                    android:text="Bed Details"
+                                    android:textColor="#3350AC"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+
+                        </androidx.gridlayout.widget.GridLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#F8F6F6"
+        app:headerLayout="@layout/navigation_drawer_header"
+        app:itemIconTint="#071A77"
+        app:itemTextColor="#071A77"
+        app:menu="@menu/dashboard_menu">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Version 1.0.2" />
+
+        </LinearLayout>
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

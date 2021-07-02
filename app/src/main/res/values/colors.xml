@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3957B5</color>
+    <color name="colorPrimaryDark">#3957B5</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!-- For All White Background -->
+    <color name="colorBackgroundWhiteGlobal">#F4F2F2</color>
+
+    <!-- Rating Bar Color -->
+    <color name="lightGrey">#CFCBCB</color>
+    <color name="duskYellow">#DCAA15</color>
+
+    <!-- For Input Forms  -->
+    <color name="colorInputStroke">#8FA9C5</color>
+    <color name="colorInputBackground">#F6F6F6</color>
+    <color name="colorInputHint">#AAB3DC</color>
+    <color name="colorInputHintError">#E4A49B</color>
+    <color name="colorInputText">#222597</color>
+
+    <!-- For Dashboard Menu Icon -->
+    <color name="colorDashboardMenuBg">#EEEEF0</color>
+    <color name="colorDashBoardMenuHoverBg">#CCD2E1</color>
+</resources>

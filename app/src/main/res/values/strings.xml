@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Get Well Soon</string>
+    <string-array name="role">
+        <item>Patient</item>
+        <item>Hospital</item>
+    </string-array>
+
+    <!--input filter-->
+    <string name="FILTER_NAME">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz</string>
+    <string name="FILTER_USER_ID">abcdefghijklmnopqrstuvwxyz1234567890@.</string>
+    <string name="FILTER_ALPHA_NUMERIC">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz1234567890</string>
+    <string name="FILTER_ALPHA_NUMERIC_NO_SPACE">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890</string>
+</resources>
