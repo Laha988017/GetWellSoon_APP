@@ -29,7 +29,7 @@ class HospitalView : AppCompatActivity() {
                 return true
             }
         }
-        myWebView.loadUrl("https://laha988017.github.io/HospitalList/")
+        myWebView.loadUrl("https://laha988017.github.io/HospitalList"+intent.getStringExtra("path"))
     }
 
 }

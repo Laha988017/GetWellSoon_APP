@@ -142,7 +142,7 @@
                             </LinearLayout>
 
                             <LinearLayout
-                                android:id="@+id/qrScannerClickView1"
+                                android:id="@+id/callBtn"
                                 android:layout_width="100dp"
                                 android:layout_height="115dp"
                                 android:layout_margin="3dp"
@@ -174,7 +174,7 @@
                             </LinearLayout>
 
                             <LinearLayout
-                                android:id="@+id/qrScannerClickView2"
+                                android:id="@+id/noOfBeds"
                                 android:layout_width="100dp"
                                 android:layout_height="115dp"
                                 android:layout_margin="3dp"
