@@ -19,7 +19,7 @@ class HospitalView : AppCompatActivity() {
         // Add Back Button on toolbar
         toolbar.setNavigationIcon(R.drawable.ic_back_arrow)
         toolbar.setNavigationOnClickListener { finish() }
-        toolbar.title = "Hospitals"
+        toolbar.title = intent.getStringExtra("name")
 
         val myWebView: WebView = findViewById(R.id.webView)
         webView.getSettings().setJavaScriptEnabled(true);

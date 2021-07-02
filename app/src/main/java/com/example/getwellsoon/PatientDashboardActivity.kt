@@ -108,16 +108,19 @@ class PatientDashboardActivity : AppCompatActivity() {
         hospitalView.setOnClickListener{
             val nextIntent = Intent(this,HospitalView::class.java)
             nextIntent.putExtra("path","/hospitaldetails")
+            nextIntent.putExtra("name","View Hospitals")
             startActivity(nextIntent)
         }
         callBtn.setOnClickListener{
             val nextIntent = Intent(this,HospitalView::class.java)
             nextIntent.putExtra("path","/contacts")
+            nextIntent.putExtra("name","Important Contacts")
             startActivity(nextIntent)
         }
         noOfBeds.setOnClickListener {
             val nextIntent = Intent(this,HospitalView::class.java)
             nextIntent.putExtra("path","/bedDetails")
+            nextIntent.putExtra("name","Hospitals Bed Details")
             startActivity(nextIntent)
         }
     }
